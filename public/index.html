@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <meta name="description" content="Group Task Sit725">
+    <meta name="author" content="Arooma Khan">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--Don't add this style into css because the background photo wouldn't upload otherwise-->
+    <style>
+      body {
+        min-height: 100vh;
+         background: url('images/bluey(1).jpg') no-repeat center/cover;
+        }
+  </style>
+</head>
+
+<!--Navigation Bar Detail-->
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#"><img src="images/logo.png" alt="Logo"></a> </div>
+        <ul>
+          <li><a href="https://www.cfa.vic.gov.au/plan-prepare/before-and-during-a-fire">Navigating Fire Hazards</a></li>
+          <li><a href="#">About Us</a></li>
+            <button class="notifications"><i class='bx bx-bell'></i> Notification</button>
+            <button class="settings"><i class='bx bx-cog'></i> Settings</button>
+            <div class="profile-photo">
+              <img src="images/dokota.jpeg" alt="Portfolio Photo">
+          </div>
+        </ul>
+    </div>
+</nav>
+
+<!--This is the two boxes that handle updates and sensor readings-->
+<main>
+  <div class="container">
+    <div class="box">
+      <h2>Sensor Readings</h2>
+      <img src="images/1.png" alt="Sensor Image">
+    </div>
+    <div class="box">
+      <h2>Updates</h2>
+    </div>
+  </div>
+</main>
+
+<!--When you click notification buttion - the content goes here-->
+<div class="notification-panel">
+  <!-- Content of the notification panel goes here -->
+  This is the notification content.
+</div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* This will remove underlines from all elements */
+* {
+  text-decoration: none;
+}
+
+/* Navbar styling */
+.navbar {
+  background: white;
+  padding: 0 15px;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Protector logo styling on navbar*/
+.logo {
+  font-size: 15px; 
+  font-weight: 600;
+  margin-right: 10px; 
+}
+
+.logo img {
+  width: 170px;
+  height: auto; 
+  margin-right: 10px;
+}
+
+ul {
+  display: flex; 
+  align-items: center; 
+}
+
+li {
+  list-style: none;
+  margin-right: 10px; 
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button {
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px 0; 
+  width: 90px;
+  border: none; 
+  color: white;
+  cursor: pointer;
+}
+
+button.notifications {
+  background-color: rgb(58, 48, 128); 
+}
+
+button.settings {
+  background-color: rgb(48, 128, 58); 
+}
+
+button:hover {
+  background-color: rgb(180, 180, 180); 
+}
+
+.profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 10px; 
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.box {
+  width: calc(50% - 10px); 
+  background-color: rgba(82, 113, 255, 0.8); 
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 10px; 
+}
+
+.box h2 {
+  text-align: center;
+}
+
+.box img {
+  max-width: 100%; 
+  margin-bottom: 10px; 
+  margin-right: 10px; 
+}
+
+.notification-panel {
+  display: none;
+  position: absolute;
+  top: 60px; 
+  right: 20px; 
+  width: 300px;
+  background-color: rgb(180, 180, 180);
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 10px; 
+
+}
+.notification-panel.show {
+  display: block; 
+}
